@@ -7,8 +7,8 @@ public class Widget {
     private int value;
     private String name;
 
-    public static final int LOWER_VALUE  = -10;
-    public static final int UPPER_VALUE  =  90;
+    public static final int LOWER_VALUE = -10;
+    public static final int UPPER_VALUE = 90;
 
     public Widget() {
         this.value = getRandomInt(LOWER_VALUE, UPPER_VALUE);
@@ -56,4 +56,10 @@ public class Widget {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    public static Widget createWidget() {
+        return new Widget();
+    }
+
+
 }
